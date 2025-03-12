@@ -1,4 +1,5 @@
-import { Award, Calendar, Code, Mail, Users } from "lucide-react";
+
+import { Award, Calendar, Code, Mail, Users, Lightbulb, Target } from "lucide-react";
 import Header from "@/components/Header";
 import Section from "@/components/Section";
 
@@ -16,6 +17,14 @@ const Index = () => {
             Join us in building solutions that matter. A 48-hour journey of coding,
             creativity, and impact.
           </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
+            <div className="glass p-3 rounded-lg border border-primary/20 font-mono">
+              <span className="text-primary mr-2">Date:</span> March 13th, 2025
+            </div>
+            <div className="glass p-3 rounded-lg border border-secondary/20 font-mono">
+              <span className="text-secondary mr-2">Venue:</span> MG Auditorium
+            </div>
+          </div>
         </div>
 
       <Section title="Rules & Guidelines" icon={<Code className="h-6 w-6" />}>
@@ -23,62 +32,128 @@ const Index = () => {
             <li>Teams of 2-4 members</li>
             <li>All code must be written during the hackathon</li>
             <li>Open source libraries and APIs are allowed</li>
-            <li>Projects must address one of the provided challenges</li>
+            <li>Projects must address one of the provided 9 SDG goals</li>
           </ul>
         </Section>
 
       <Section title="Schedule & Deadlines" icon={<Calendar className="h-6 w-6" />}>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-mono text-primary mb-2">Day 1</h3>
-              <p>10:00 AM - Opening Ceremony</p>
-              <p>11:00 AM - Team Formation</p>
-              <p>12:00 PM - Hacking Begins</p>
-            </div>
-            <div>
-              <h3 className="text-xl font-mono text-primary mb-2">Day 2</h3>
-              <p>12:00 PM - Project Submissions</p>
-              <p>2:00 PM - Presentations</p>
-              <p>4:00 PM - Awards Ceremony</p>
-            </div>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="border-b border-primary/20">
+                  <th className="py-2 px-3 text-left text-primary font-mono">Time</th>
+                  <th className="py-2 px-3 text-left text-primary font-mono">Activity</th>
+                </tr>
+              </thead>
+              <tbody className="text-muted-foreground">
+                <tr className="border-b border-white/5 hover:bg-white/5">
+                  <td className="py-3 px-3 font-mono">08:00 - 08:30 AM</td>
+                  <td className="py-3 px-3">
+                    <span className="font-semibold text-foreground">Entry & On-Spot Registration</span>
+                    <p className="text-sm">Check-in, welcome kits, breakfast/snacks</p>
+                  </td>
+                </tr>
+                <tr className="border-b border-white/5 hover:bg-white/5">
+                  <td className="py-3 px-3 font-mono">08:30 - 09:00 AM</td>
+                  <td className="py-3 px-3">
+                    <span className="font-semibold text-foreground">Opening Ceremony</span>
+                    <p className="text-sm">Intro, rules, judging criteria</p>
+                  </td>
+                </tr>
+                <tr className="border-b border-white/5 hover:bg-white/5">
+                  <td className="py-3 px-3 font-mono">09:00 - 12:40 PM</td>
+                  <td className="py-3 px-3">
+                    <span className="font-semibold text-foreground">Hacking Begins 🚀 (Part 1)</span>
+                    <p className="text-sm">Development phase, mentors available</p>
+                  </td>
+                </tr>
+                <tr className="border-b border-white/5 hover:bg-white/5">
+                  <td className="py-3 px-3 font-mono">12:40 - 01:30 PM</td>
+                  <td className="py-3 px-3">
+                    <span className="font-semibold text-foreground">1st Round of Evaluation (by Vnest) 🏅</span>
+                    <p className="text-sm">Internal feedback</p>
+                  </td>
+                </tr>
+                <tr className="border-b border-white/5 hover:bg-white/5">
+                  <td className="py-3 px-3 font-mono">01:00 - 02:00 PM</td>
+                  <td className="py-3 px-3">
+                    <span className="font-semibold text-foreground">Lunch Break 🍽️</span>
+                    <p className="text-sm">Refresh & recharge</p>
+                  </td>
+                </tr>
+                <tr className="border-b border-white/5 hover:bg-white/5">
+                  <td className="py-3 px-3 font-mono">02:00 - 06:00 PM</td>
+                  <td className="py-3 px-3">
+                    <span className="font-semibold text-foreground">Hacking Continues (Final Sprint) 🚀</span>
+                    <p className="text-sm">Implement feedback, refine project</p>
+                  </td>
+                </tr>
+                <tr className="border-b border-white/5 hover:bg-white/5">
+                  <td className="py-3 px-3 font-mono">06:00 - 07:00 PM</td>
+                  <td className="py-3 px-3">
+                    <span className="font-semibold text-foreground">2nd Round of Evaluation (by External Judges) 🏆</span>
+                    <p className="text-sm">Final project assessment</p>
+                  </td>
+                </tr>
+                <tr className="border-b border-white/5 hover:bg-white/5">
+                  <td className="py-3 px-3 font-mono">07:00 - 07:30 PM</td>
+                  <td className="py-3 px-3">
+                    <span className="font-semibold text-foreground">Video Preparation & Networking</span>
+                    <p className="text-sm">See submission instructions for more info</p>
+                  </td>
+                </tr>
+                <tr className="border-b border-white/5 hover:bg-white/5">
+                  <td className="py-3 px-3 font-mono">07:30 - 08:00 PM</td>
+                  <td className="py-3 px-3">
+                    <span className="font-semibold text-foreground">Valedictory Ceremony 🎤</span>
+                    <p className="text-sm">Winner announcements, networking, and group photos</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </Section>
 
       <Section title="Judging Criteria" icon={<Award className="h-6 w-6" />}>
-        <div className="space-y-6">
-          <div className="glass p-6 rounded-lg border border-primary/20">
-            <h3 className="text-xl font-mono text-primary mb-3">Innovation and Creativity (40%)</h3>
-            <p className="text-muted-foreground">
-              Assessment focuses on solution novelty and ingenuity. High value placed on innovative approaches 
-              leveraging emerging technologies and cross-disciplinary methodologies. Solutions demonstrating 
-              transformative potential will receive special consideration.
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="glass p-5 rounded-lg border border-primary/20">
+            <h3 className="text-xl font-mono text-primary mb-2">Innovation (40%)</h3>
+            <p className="text-sm text-muted-foreground">
+              Novelty of solution and creative use of emerging technologies to address SDG goals.
             </p>
           </div>
 
-          <div className="glass p-6 rounded-lg border border-secondary/20">
-            <h3 className="text-xl font-mono text-secondary mb-3">Impact and SDG Relevance (30%)</h3>
-            <p className="text-muted-foreground">
-              Evaluation based on alignment with selected SDGs and potential for solving critical global 
-              challenges. Priority given to scalable and sustainable solutions that effectively address 
-              root causes of chosen SDG issues.
+          <div className="glass p-5 rounded-lg border border-secondary/20">
+            <h3 className="text-xl font-mono text-secondary mb-2">Impact (30%)</h3>
+            <p className="text-sm text-muted-foreground">
+              Alignment with SDGs and potential to solve critical global challenges with scalable solutions.
             </p>
           </div>
 
-          <div className="glass p-6 rounded-lg border border-accent/20">
-            <h3 className="text-xl font-mono text-accent mb-3">Feasibility and Implementation (20%)</h3>
-            <p className="text-muted-foreground">
-              Focus on practical implementation and technical feasibility. Solutions should demonstrate clear 
-              deployment pathways and realistic scaling strategies in real-world contexts.
+          <div className="glass p-5 rounded-lg border border-accent/20">
+            <h3 className="text-xl font-mono text-accent mb-2">Feasibility (20%)</h3>
+            <p className="text-sm text-muted-foreground">
+              Practical implementation pathway and technical viability in real-world contexts.
             </p>
           </div>
 
-          <div className="glass p-6 rounded-lg border border-primary/20">
-            <h3 className="text-xl font-mono text-primary mb-3">Risk Assessment (10%)</h3>
-            <p className="text-muted-foreground">
-              Evaluation of security, privacy, and ethical considerations. Solutions must demonstrate robust 
-              risk mitigation strategies and adaptability to evolving challenges.
+          <div className="glass p-5 rounded-lg border border-primary/20">
+            <h3 className="text-xl font-mono text-primary mb-2">Risk Assessment (10%)</h3>
+            <p className="text-sm text-muted-foreground">
+              Security, privacy, and ethical considerations with robust mitigation strategies.
             </p>
           </div>
+        </div>
+      </Section>
+
+      <Section title="Submission Instructions" icon={<Target className="h-6 w-6" />}>
+        <div className="glass p-6 rounded-lg border border-secondary/20">
+          <ul className="space-y-3 text-muted-foreground">
+            <li><span className="text-secondary font-semibold">GitHub Repository:</span> Submit your project code via GitHub with detailed README</li>
+            <li><span className="text-secondary font-semibold">Demo Video:</span> Create a 3-minute video demonstrating your solution</li>
+            <li><span className="text-secondary font-semibold">Presentation:</span> Prepare a 5-slide deck explaining your solution, impact, and implementation</li>
+            <li><span className="text-secondary font-semibold">Submission Portal:</span> Upload all materials to the hackathon portal by the deadline</li>
+          </ul>
         </div>
       </Section>
 
@@ -90,7 +165,7 @@ const Index = () => {
               based on shared interests and complementary skills.
             </p>
             <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
-              <p className="font-mono">Team registration deadline: October 15, 2024</p>
+              <p className="font-mono">Team registration deadline: March 10th, 2025</p>
             </div>
           </div>
         </Section>
@@ -122,6 +197,73 @@ const Index = () => {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section title="SDG Goals" icon={<Lightbulb className="h-6 w-6" />}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="glass p-5 rounded-lg border border-primary/20">
+            <h3 className="text-lg font-mono text-primary mb-2">SDG 3: Good Health and Well-being</h3>
+            <p className="text-sm text-muted-foreground">
+              Ensure healthy lives and promote well-being for all at all ages.
+            </p>
+          </div>
+
+          <div className="glass p-5 rounded-lg border border-secondary/20">
+            <h3 className="text-lg font-mono text-secondary mb-2">SDG 4: Quality Education</h3>
+            <p className="text-sm text-muted-foreground">
+              Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.
+            </p>
+          </div>
+
+          <div className="glass p-5 rounded-lg border border-accent/20">
+            <h3 className="text-lg font-mono text-accent mb-2">SDG 7: Affordable and Clean Energy</h3>
+            <p className="text-sm text-muted-foreground">
+              Ensure access to affordable, reliable, sustainable, and modern energy for all.
+            </p>
+          </div>
+
+          <div className="glass p-5 rounded-lg border border-primary/20">
+            <h3 className="text-lg font-mono text-primary mb-2">SDG 8: Decent Work and Economic Growth</h3>
+            <p className="text-sm text-muted-foreground">
+              Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all.
+            </p>
+          </div>
+
+          <div className="glass p-5 rounded-lg border border-secondary/20">
+            <h3 className="text-lg font-mono text-secondary mb-2">SDG 9: Industry, Innovation, and Infrastructure</h3>
+            <p className="text-sm text-muted-foreground">
+              Build resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation.
+            </p>
+          </div>
+
+          <div className="glass p-5 rounded-lg border border-accent/20">
+            <h3 className="text-lg font-mono text-accent mb-2">SDG 10: Reduced Inequalities</h3>
+            <p className="text-sm text-muted-foreground">
+              Reduce inequality within and among countries.
+            </p>
+          </div>
+
+          <div className="glass p-5 rounded-lg border border-primary/20">
+            <h3 className="text-lg font-mono text-primary mb-2">SDG 11: Sustainable Cities and Communities</h3>
+            <p className="text-sm text-muted-foreground">
+              Make cities and human settlements inclusive, safe, resilient, and sustainable.
+            </p>
+          </div>
+
+          <div className="glass p-5 rounded-lg border border-secondary/20">
+            <h3 className="text-lg font-mono text-secondary mb-2">SDG 13: Climate Action</h3>
+            <p className="text-sm text-muted-foreground">
+              Take urgent action to combat climate change and its impacts.
+            </p>
+          </div>
+
+          <div className="glass p-5 rounded-lg border border-accent/20 md:col-span-2 mx-auto max-w-md">
+            <h3 className="text-lg font-mono text-accent mb-2">SDG 17: Partnerships for the Goals</h3>
+            <p className="text-sm text-muted-foreground">
+              Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.
+            </p>
           </div>
         </div>
       </Section>
