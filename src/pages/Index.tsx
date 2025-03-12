@@ -50,7 +50,7 @@ const Index = () => {
                   <td className="py-3 px-3 font-mono">08:00 - 08:30 AM</td>
                   <td className="py-3 px-3">
                     <span className="font-semibold text-foreground">Entry & On-Spot Registration</span>
-                    <p className="text-sm">Check-in, welcome kits, breakfast/snacks</p>
+                    <p className="text-sm">Check-in, network & Have fun</p>
                   </td>
                 </tr>
                 <tr className="border-b border-white/5 hover:bg-white/5">
