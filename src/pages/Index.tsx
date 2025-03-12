@@ -7,14 +7,14 @@ const Index = () => {
   return (
     <div className="min-h-screen pb-20">
       <Header />
-      
+
       <main className="container mx-auto pt-28 space-y-8">
         <div className="text-center space-y-4 mb-12">
           <h1 className="text-4xl md:text-6xl font-bold glow animate-fade-in">
             Innovate for Impact
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in">
-            Join us in building solutions that matter. A 48-hour journey of coding,
+            Join us in building solutions that matter. A 12-hour journey of coding,
             creativity, and impact.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
@@ -27,7 +27,7 @@ const Index = () => {
           </div>
         </div>
 
-      <Section title="Rules & Guidelines" icon={<Code className="h-6 w-6" />}>
+        <Section title="Rules & Guidelines" icon={<Code className="h-6 w-6" />}>
           <ul className="list-disc list-inside space-y-2">
             <li>Teams of 2-4 members</li>
             <li>All code must be written during the hackathon</li>
@@ -36,7 +36,7 @@ const Index = () => {
           </ul>
         </Section>
 
-      <Section title="Schedule & Deadlines" icon={<Calendar className="h-6 w-6" />}>
+        <Section title="Schedule & Deadlines" icon={<Calendar className="h-6 w-6" />}>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
@@ -114,167 +114,154 @@ const Index = () => {
           </div>
         </Section>
 
-      <Section title="Judging Criteria" icon={<Award className="h-6 w-6" />}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="glass p-5 rounded-lg border border-primary/20">
-            <h3 className="text-xl font-mono text-primary mb-2">Innovation & Uniqueness (25%)</h3>
-            <p className="text-sm text-muted-foreground">
-              How original and creative is the idea compared to existing solutions?
-            </p>
-          </div>
+        <Section title="Judging Criteria" icon={<Award className="h-6 w-6" />}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="glass p-5 rounded-lg border border-primary/20">
+              <h3 className="text-xl font-mono text-primary mb-2">Innovation & Uniqueness (25%)</h3>
+              <p className="text-sm text-muted-foreground">
+                How original and creative is the idea compared to existing solutions?
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-secondary/20">
-            <h3 className="text-xl font-mono text-secondary mb-2">Impact & Alignment with SDGs (25%)</h3>
-            <p className="text-sm text-muted-foreground">
-              How well does the solution address a Sustainable Development Goal (SDG) and create a meaningful impact?
-            </p>
-          </div>
+            <div className="glass p-5 rounded-lg border border-secondary/20">
+              <h3 className="text-xl font-mono text-secondary mb-2">Impact & Alignment with SDGs (25%)</h3>
+              <p className="text-sm text-muted-foreground">
+                How well does the solution address a Sustainable Development Goal (SDG) and create a meaningful impact?
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-accent/20">
-            <h3 className="text-xl font-mono text-accent mb-2">Feasibility & Scalability (20%)</h3>
-            <p className="text-sm text-muted-foreground">
-              Can the solution be practically implemented and scaled to a larger audience or market?
-            </p>
-          </div>
+            <div className="glass p-5 rounded-lg border border-accent/20">
+              <h3 className="text-xl font-mono text-accent mb-2">Feasibility & Scalability (20%)</h3>
+              <p className="text-sm text-muted-foreground">
+                Can the solution be practically implemented and scaled to a larger audience or market?
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-primary/20">
-            <h3 className="text-xl font-mono text-primary mb-2">Tech & Deployment Viability (15%)</h3>
-            <p className="text-sm text-muted-foreground">
-              How well is the technology stack chosen for implementation, and is the deployment realistic?
-            </p>
-          </div>
+            <div className="glass p-5 rounded-lg border border-primary/20">
+              <h3 className="text-xl font-mono text-primary mb-2">Tech & Deployment Viability (15%)</h3>
+              <p className="text-sm text-muted-foreground">
+                How well is the technology stack chosen for implementation, and is the deployment realistic?
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-secondary/20 md:col-span-2 mx-auto max-w-md">
-            <h3 className="text-xl font-mono text-secondary mb-2">Cost-effectiveness & Economic Viability (15%)</h3>
-            <p className="text-sm text-muted-foreground">
-              Is the solution affordable to develop, sustain, and scale while maintaining efficiency?
-            </p>
-          </div>
-        </div>
-      </Section>
-
-      <Section title="Submission Instructions" icon={<Target className="h-6 w-6" />}>
-        <div className="glass p-6 rounded-lg border border-secondary/20">
-          <ul className="space-y-3 text-muted-foreground">
-            <li><span className="text-secondary font-semibold">GitHub Repository:</span> Submit your project code via GitHub with detailed README</li>
-            <li><span className="text-secondary font-semibold">Demo Video:</span> Create a 3-minute video demonstrating your solution</li>
-            <li><span className="text-secondary font-semibold">Presentation:</span> Prepare a 5-slide deck explaining your solution, impact, and implementation</li>
-            <li><span className="text-secondary font-semibold">Submission Portal:</span> Upload all materials to the hackathon portal by the deadline</li>
-          </ul>
-        </div>
-      </Section>
-
-      <Section title="Team Formation" icon={<Users className="h-6 w-6" />}>
-          <div className="space-y-4">
-            <p>
-              Form teams of 2-4 members. If you don't have a team, join our team
-              formation session where you can meet other participants and form teams
-              based on shared interests and complementary skills.
-            </p>
-            <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
-              <p className="font-mono">Team registration deadline: March 10th, 2025</p>
+            <div className="glass p-5 rounded-lg border border-secondary/20 md:col-span-2 mx-auto max-w-md">
+              <h3 className="text-xl font-mono text-secondary mb-2">Cost-effectiveness & Economic Viability (15%)</h3>
+              <p className="text-sm text-muted-foreground">
+                Is the solution affordable to develop, sustain, and scale while maintaining efficiency?
+              </p>
             </div>
           </div>
         </Section>
 
-      <Section title="Event Coordinators" icon={<Mail className="h-6 w-6" />}>
-        <div className="space-y-6">
-          <div className="glass p-6 rounded-lg">
-            <h3 className="text-xl font-mono text-primary mb-4">Faculty Coordinators</h3>
-            <div className="space-y-2 text-muted-foreground">
-              <p>Dr. Saurav Gupta</p>
-              <p>Dr. Jayanthi R</p>
-              <p>Dr. Rishikeshan CA</p>
-            </div>
+        <Section title="Submission Instructions" icon={<Target className="h-6 w-6" />}>
+          <div className="glass p-6 rounded-lg border border-secondary/20">
+            <ul className="space-y-3 text-muted-foreground">
+              <li><span className="text-secondary font-semibold">GitHub Repository:</span> Submit your project code via a public GitHub repository, including a detailed README file.</li>
+              <li><span className="text-secondary font-semibold">Demo Video:</span> Create a 3-5 minute demo video explaining your project and its functionality. Share the video on your Instagram story and tag the DevOps and VNest pages.</li>
+              <li><span className="text-secondary font-semibold">Presentation:</span> Prepare a 6-slide presentation following the sample template. You can access it <a href="https://docs.google.com/presentation/d/1ClvHZ55X8BDx6QvgBuej7fh7zJpUBCGpTjHchpY4PLo/edit?usp=sharing" target="_blank" className="text-primary">here</a>.</li>
+              <li><span className="text-secondary font-semibold">Submission Portal:</span> Upload all materials (GitHub link and presentation) to the hackathon submission portal via the Google Form.</li>
+            </ul>
           </div>
+        </Section>
 
-          <div className="glass p-6 rounded-lg">
-            <h3 className="text-xl font-mono text-primary mb-4">Student Coordinators</h3>
-            <div className="space-y-4">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded bg-primary/10 border border-primary/20">
-                <span className="font-semibold">Sakshi Bansal</span>
-                <a href="tel:+918168040827" className="font-mono text-primary hover:text-primary/80 transition-colors">
-                  +91 8168040827
-                </a>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded bg-primary/10 border border-primary/20">
-                <span className="font-semibold">Pratik Anand</span>
-                <a href="tel:+917903956084" className="font-mono text-primary hover:text-primary/80 transition-colors">
-                  +91 7903956084
-                </a>
+        <Section title="Event Coordinators" icon={<Mail className="h-6 w-6" />}>
+          <div className="space-y-6">
+            <div className="glass p-6 rounded-lg">
+              <h3 className="text-xl font-mono text-primary mb-4">Faculty Coordinators</h3>
+              <div className="space-y-2 text-muted-foreground">
+                <p>Dr. Saurav Gupta</p>
+                <p>Dr. Jayanthi R</p>
+                <p>Dr. Rishikeshan CA</p>
               </div>
             </div>
-          </div>
-        </div>
-      </Section>
 
-      <Section title="SDG Goals" icon={<Lightbulb className="h-6 w-6" />}>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="glass p-5 rounded-lg border border-primary/20">
-            <h3 className="text-lg font-mono text-primary mb-2">SDG 3: Good Health and Well-being</h3>
-            <p className="text-sm text-muted-foreground">
-              Ensure healthy lives and promote well-being for all at all ages.
-            </p>
+            <div className="glass p-6 rounded-lg">
+              <h3 className="text-xl font-mono text-primary mb-4">Student Coordinators</h3>
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded bg-primary/10 border border-primary/20">
+                  <span className="font-semibold">Sakshi Bansal</span>
+                  <a href="tel:+918168040827" className="font-mono text-primary hover:text-primary/80 transition-colors">
+                    +91 8168040827
+                  </a>
+                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between p-3 rounded bg-primary/10 border border-primary/20">
+                  <span className="font-semibold">Pratik Anand</span>
+                  <a href="tel:+917903956084" className="font-mono text-primary hover:text-primary/80 transition-colors">
+                    +91 7903956084
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
+        </Section>
 
-          <div className="glass p-5 rounded-lg border border-secondary/20">
-            <h3 className="text-lg font-mono text-secondary mb-2">SDG 4: Quality Education</h3>
-            <p className="text-sm text-muted-foreground">
-              Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.
-            </p>
-          </div>
+        <Section title="SDG Goals" icon={<Lightbulb className="h-6 w-6" />}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="glass p-5 rounded-lg border border-primary/20">
+              <h3 className="text-lg font-mono text-primary mb-2">SDG 3: Good Health and Well-being</h3>
+              <p className="text-sm text-muted-foreground">
+                Ensure healthy lives and promote well-being for all at all ages.
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-accent/20">
-            <h3 className="text-lg font-mono text-accent mb-2">SDG 7: Affordable and Clean Energy</h3>
-            <p className="text-sm text-muted-foreground">
-              Ensure access to affordable, reliable, sustainable, and modern energy for all.
-            </p>
-          </div>
+            <div className="glass p-5 rounded-lg border border-secondary/20">
+              <h3 className="text-lg font-mono text-secondary mb-2">SDG 4: Quality Education</h3>
+              <p className="text-sm text-muted-foreground">
+                Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-primary/20">
-            <h3 className="text-lg font-mono text-primary mb-2">SDG 8: Decent Work and Economic Growth</h3>
-            <p className="text-sm text-muted-foreground">
-              Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all.
-            </p>
-          </div>
+            <div className="glass p-5 rounded-lg border border-accent/20">
+              <h3 className="text-lg font-mono text-accent mb-2">SDG 7: Affordable and Clean Energy</h3>
+              <p className="text-sm text-muted-foreground">
+                Ensure access to affordable, reliable, sustainable, and modern energy for all.
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-secondary/20">
-            <h3 className="text-lg font-mono text-secondary mb-2">SDG 9: Industry, Innovation, and Infrastructure</h3>
-            <p className="text-sm text-muted-foreground">
-              Build resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation.
-            </p>
-          </div>
+            <div className="glass p-5 rounded-lg border border-primary/20">
+              <h3 className="text-lg font-mono text-primary mb-2">SDG 8: Decent Work and Economic Growth</h3>
+              <p className="text-sm text-muted-foreground">
+                Promote sustained, inclusive, and sustainable economic growth, full and productive employment, and decent work for all.
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-accent/20">
-            <h3 className="text-lg font-mono text-accent mb-2">SDG 10: Reduced Inequalities</h3>
-            <p className="text-sm text-muted-foreground">
-              Reduce inequality within and among countries.
-            </p>
-          </div>
+            <div className="glass p-5 rounded-lg border border-secondary/20">
+              <h3 className="text-lg font-mono text-secondary mb-2">SDG 9: Industry, Innovation, and Infrastructure</h3>
+              <p className="text-sm text-muted-foreground">
+                Build resilient infrastructure, promote inclusive and sustainable industrialization, and foster innovation.
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-primary/20">
-            <h3 className="text-lg font-mono text-primary mb-2">SDG 11: Sustainable Cities and Communities</h3>
-            <p className="text-sm text-muted-foreground">
-              Make cities and human settlements inclusive, safe, resilient, and sustainable.
-            </p>
-          </div>
+            <div className="glass p-5 rounded-lg border border-accent/20">
+              <h3 className="text-lg font-mono text-accent mb-2">SDG 10: Reduced Inequalities</h3>
+              <p className="text-sm text-muted-foreground">
+                Reduce inequality within and among countries.
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-secondary/20">
-            <h3 className="text-lg font-mono text-secondary mb-2">SDG 13: Climate Action</h3>
-            <p className="text-sm text-muted-foreground">
-              Take urgent action to combat climate change and its impacts.
-            </p>
-          </div>
+            <div className="glass p-5 rounded-lg border border-primary/20">
+              <h3 className="text-lg font-mono text-primary mb-2">SDG 11: Sustainable Cities and Communities</h3>
+              <p className="text-sm text-muted-foreground">
+                Make cities and human settlements inclusive, safe, resilient, and sustainable.
+              </p>
+            </div>
 
-          <div className="glass p-5 rounded-lg border border-accent/20 md:col-span-2 mx-auto max-w-md">
-            <h3 className="text-lg font-mono text-accent mb-2">SDG 17: Partnerships for the Goals</h3>
-            <p className="text-sm text-muted-foreground">
-              Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.
-            </p>
+            <div className="glass p-5 rounded-lg border border-secondary/20">
+              <h3 className="text-lg font-mono text-secondary mb-2">SDG 13: Climate Action</h3>
+              <p className="text-sm text-muted-foreground">
+                Take urgent action to combat climate change and its impacts.
+              </p>
+            </div>
+
+            <div className="glass p-5 rounded-lg border border-accent/20 md:col-span-2 mx-auto max-w-md">
+              <h3 className="text-lg font-mono text-accent mb-2">SDG 17: Partnerships for the Goals</h3>
+              <p className="text-sm text-muted-foreground">
+                Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.
+              </p>
+            </div>
           </div>
-        </div>
-      </Section>
-    </main>
+        </Section>
+      </main>
     </div>
   );
 };
