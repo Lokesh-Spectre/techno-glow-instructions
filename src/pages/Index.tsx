@@ -1,4 +1,3 @@
-
 import { Award, Calendar, Code, Mail, Users, Lightbulb, Target } from "lucide-react";
 import Header from "@/components/Header";
 import Section from "@/components/Section";
