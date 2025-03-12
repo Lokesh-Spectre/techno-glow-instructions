@@ -1,3 +1,4 @@
+
 import { Award, Calendar, Code, Mail, Users, Lightbulb, Target } from "lucide-react";
 import Header from "@/components/Header";
 import Section from "@/components/Section";
@@ -116,30 +117,37 @@ const Index = () => {
       <Section title="Judging Criteria" icon={<Award className="h-6 w-6" />}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="glass p-5 rounded-lg border border-primary/20">
-            <h3 className="text-xl font-mono text-primary mb-2">Innovation (40%)</h3>
+            <h3 className="text-xl font-mono text-primary mb-2">Innovation & Uniqueness (25%)</h3>
             <p className="text-sm text-muted-foreground">
-              Novelty of solution and creative use of emerging technologies to address SDG goals.
+              How original and creative is the idea compared to existing solutions?
             </p>
           </div>
 
           <div className="glass p-5 rounded-lg border border-secondary/20">
-            <h3 className="text-xl font-mono text-secondary mb-2">Impact (30%)</h3>
+            <h3 className="text-xl font-mono text-secondary mb-2">Impact & Alignment with SDGs (25%)</h3>
             <p className="text-sm text-muted-foreground">
-              Alignment with SDGs and potential to solve critical global challenges with scalable solutions.
+              How well does the solution address a Sustainable Development Goal (SDG) and create a meaningful impact?
             </p>
           </div>
 
           <div className="glass p-5 rounded-lg border border-accent/20">
-            <h3 className="text-xl font-mono text-accent mb-2">Feasibility (20%)</h3>
+            <h3 className="text-xl font-mono text-accent mb-2">Feasibility & Scalability (20%)</h3>
             <p className="text-sm text-muted-foreground">
-              Practical implementation pathway and technical viability in real-world contexts.
+              Can the solution be practically implemented and scaled to a larger audience or market?
             </p>
           </div>
 
           <div className="glass p-5 rounded-lg border border-primary/20">
-            <h3 className="text-xl font-mono text-primary mb-2">Risk Assessment (10%)</h3>
+            <h3 className="text-xl font-mono text-primary mb-2">Tech & Deployment Viability (15%)</h3>
             <p className="text-sm text-muted-foreground">
-              Security, privacy, and ethical considerations with robust mitigation strategies.
+              How well is the technology stack chosen for implementation, and is the deployment realistic?
+            </p>
+          </div>
+
+          <div className="glass p-5 rounded-lg border border-secondary/20 md:col-span-2 mx-auto max-w-md">
+            <h3 className="text-xl font-mono text-secondary mb-2">Cost-effectiveness & Economic Viability (15%)</h3>
+            <p className="text-sm text-muted-foreground">
+              Is the solution affordable to develop, sustain, and scale while maintaining efficiency?
             </p>
           </div>
         </div>
